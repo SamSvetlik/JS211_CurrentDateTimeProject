@@ -15,10 +15,16 @@ const displayDate = () => {
  
 
 // Write a JavaScript program to convert a number to a string.
-
+const numToString = (num) => {
+  return num.toString()
+}
 
 
 // Write a JavaScript program to convert a string to the number.
+const string2Num = (str) => {
+  return parseInt(str)
+
+}
 
 
 
@@ -29,23 +35,54 @@ const displayDate = () => {
   // * Number
   // * NaN
   // * String
-  
+  const checkDataType = (datatype) => {
+    return typeof datatype;
+  }
+// console.log(checkDataType("str"))
+// console.log(checkDataType(5))
+// console.log(checkDataType(false))
+// console.log(checkDataType(null))
+// console.log(checkDataType(undefined))
+// console.log(checkDataType(NaN))
 
-  
 // Write a JavaScript program that adds 2 numbers together.
-
+const sum = (num1, num2) => {
+  return num1 + num2;
+}
 
 
 // Write a JavaScript program that runs only when 2 things are true.
-
+const checkAgeAndHeight = (age, height) => {
+  if (age >= 10 && height >= 108) {
+    return 'You may ride the rollercoaster'
+  }
+}
 
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
+const checkForAgeOrHeight = (age, height) => {
+  if (age >= 10 || height >= 108) {
+    return 'You may ride the rollercoaster'
+  }
+}
 
 
+// Write a JavaScript program that runs when both things are not true. 
 
-// Write a JavaScript program that runs when both things are not true.  
-
+// === This is the example you gave us in class ===
+const notAgeAndHeight = (age, height) => {
+  if (age >= 10 && height >= 108) {
+    return 'You may ride the rollercoaster'
+  } else {
+    return 'Both things are false'
+  }
+}
+// === I came up with another that fit the instruction a little better
+const neitherANorB = (a, b) => {
+  if (a === false && b === false) {
+    return 'Both A and B are false.'
+  }
+}
 // ***************************
 //         PART TWO
 // ***************************
